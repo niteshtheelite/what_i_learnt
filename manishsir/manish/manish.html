@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Manish Kumar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section - Purple gradient */
+        .header-section {
+            background: linear-gradient(135deg, #b968d9, #9c5cc9);
+            padding: 40px 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-image {
+            flex-shrink: 0;
+        }
+
+        .header-image img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .connect-section {
+            margin-top: 20px;
+        }
+
+        .connect-section h4 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icon:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .back-to-top {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* About Section - Same purple gradient */
+        .about-section {
+            background: linear-gradient(135deg, #b968d9, #9c5cc9);
+            padding: 50px 20px;
+        }
+
+        .about-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .about-content p {
+            text-align: justify;
+            line-height: 1.8;
+            opacity: 0.95;
+            font-size: 0.95rem;
+        }
+
+        .profile-image {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Education Section - Light gray background */
+        .education-section {
+            background: #f5f5f5;
+            color: #333;
+            padding: 50px 20px;
+        }
+
+        .section-container {
+            display: flex;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #b968d9;
+            min-width: 200px;
+            flex-shrink: 0;
+        }
+
+        .section-content {
+            flex: 1;
+        }
+
+        .education-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+            color: #b968d9;
+        }
+
+        .education-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .education-details p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Membership Section - White background */
+        .membership-section {
+            background: white;
+            color: #333;
+            padding: 50px 20px;
+        }
+
+        .membership-item {
+            margin-bottom: 15px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .membership-item:last-child {
+            border-bottom: none;
+        }
+
+        .membership-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Work Experience Section - Light beige background */
+        .work-section {
+            background: #f9f7f4;
+            color: #333;
+            padding: 50px 20px;
+        }
+
+        .work-category {
+            background: #8B4513;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .work-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #b968d9;
+        }
+
+        .work-item p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Sample Work Section - Light purple */
+        .sample-work {
+            background: #e8d5f0;
+            color: #7a4d8c;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .sample-work h2 {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .header-image img {
+                width: 250px;
+                height: 150px;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-image {
+                order: -1;
+                align-self: center;
+            }
+
+            .profile-image img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-content {
+                text-align: left;
+            }
+
+            .section-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .section-title {
+                min-width: auto;
+                text-align: center;
+            }
+
+            .education-item {
+                flex-direction: column;
+                gap: 10px;
+                text-align: left;
+            }
+
+            .year {
+                text-align: left;
+                font-size: 1.2rem;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .header-image img {
+                width: 200px;
+                height: 120px;
+            }
+
+            .header-section,
+            .about-section,
+            .education-section,
+            .membership-section,
+            .work-section,
+            .sample-work {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section - Purple -->
+    <section class="header-section">
+        <div class="header">
+            <div class="header-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNEE0QTRBIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNEQzE0M0MiLz4KPHN2Zz4K" alt="Laptop with hands typing">
+            </div>
+            <div class="header-content">
+                <h1>Reach out</h1>
+                <div class="contact-info">
+                    <h3>Dr. Manish Kumar</h3>
+                    <p>manishkumar@gmail.com</p>
+                    <p>manishkg1971@yahoo.com</p>
+                </div>
+                <div class="connect-section">
+                    <h4>CONNECT WITH ME</h4>
+                    <div class="social-icons">
+                        <div class="social-icon">🐦</div>
+                        <div class="social-icon">📘</div>
+                        <div class="social-icon">💼</div>
+                    </div>
+                    <button class="back-to-top">Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Purple -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Dr. Kumar is a distinguished academician and accomplished professional in the field of Information Technology with a strong educational background and extensive experience in academia and research. Over the years, he has held key academic positions including Associate Professor at Regional College of Engineering and Principal at Vidya Vihar Institute of Technology, Bihar. A dedicated researcher, Dr. Kumar has numerous contributions to his field through papers and publications in esteemed National and International journals. He has also served participants in various seminars and conferences, presenting insightful research papers that have made significant contributions to the technological domain. His expertise spans diverse areas of IT engineering and management. Dr. Kumar is also an active member of various professional associations and societies such as the International Association of Engineers, the Computer Society of India, and the Institution of Engineers India, which underscores his commitment to continuous learning and professional development. Through his leadership in education and research, Currently Dr. Kumar serves as the Director at L.N Mishra Mishra College of Business Management, Muzaffarpur, where he continues to lead with vision, fostering academic excellence and innovation in management and technology education.</p>
+            </div>
+            <div class="profile-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMTAwIiBmaWxsPSIjNEE0QTRBIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iI0RDMTQzQyIvPgo8cGF0aCBkPSJNNTAgMTUwIFE1MCA5MCA4MCA5MCA5MCA5MCAxMTAgOTAgMTMwIDkwIDEzMCA5MCA1MCA5MCAxNTAgMTUwIiBmaWxsPSIjREMxNDNDIi8+Cjwvc3ZnPgo=" alt="Dr. Manish Kumar Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section - Light gray -->
+    <section class="education-section">
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <div class="education-item">
+                    <div class="year">2012</div>
+                    <div class="education-details">
+                        <h4>DOCTOR OF PHILOSOPHY</h4>
+                        <p>PH. D (DEPARTMENT OF INFORMATION TECHNOLOGY ENGINEERING) FROM GULZAR GROUP BRAHMIN JHARKHAND UNIVERSITY, MUZAFFARPUR, BIHAR, IN SEPTEMBER 2012</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="year">2005</div>
+                    <div class="education-details">
+                        <h4>MASTER OF TECHNOLOGY</h4>
+                        <p>INFORMATION TECHNOLOGY FROM ALLAHABAD AGRICULTURE DEEMED UNIVERSITY, ALLAHABAD, IN AUGUST 2005</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="year">1995</div>
+                    <div class="education-details">
+                        <h4>Bachelor of Engineering</h4>
+                        <p>ELECTRONICS AND COMMUNICATION FROM MANGALORE UNIVERSITY, KARNATAKA IN JULY 1995</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section - White -->
+    <section class="membership-section">
+        <div class="section-container">
+            <h2 class="section-title">Membership</h2>
+            <div class="section-content">
+                <div class="membership-item">
+                    <p>Life member of Computer Society of India (Member Id: 20421490490)</p>
+                </div>
+                <div class="membership-item">
+                    <p>Life member of International Association of Engineers (Member Id: 152289)</p>
+                </div>
+                <div class="membership-item">
+                    <p>Fellow Membership of The Institution of Engineers India (Member Id: F-1349547)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section - Light beige -->
+    <section class="work-section">
+        <div class="section-container">
+            <h2 class="section-title">Work and Experience</h2>
+            <div class="section-content">
+                <div class="work-category">
+                    ADMINISTRATION AND TEACHING
+                </div>
+
+                <div class="work-item">
+                    <p>• Presently working as a Director, L N Mishra College of Business Management, Muzaffarpur, Bihar Since Sep 2023.</p>
+                </div>
+
+                <div class="work-item">
+                    <p>• Worked as a Principal at Vidya Vihar Institute of Technology, Mananga, Purnea, Bihar from Jun 2014 to July 2023</p>
+                </div>
+
+                <div class="work-item">
+                    <p>• Worked as Asst. Professor at Bhagalpur College of Engineering, Bhagalpur, Bihar, in Computer Science & Engineering Department on Contractual Basis from Jan, 2008 to Jun, 2014</p>
+                </div>
+
+                <div class="work-item">
+                    <p>• Worked as Asst. Professor at L N Mishra College of Business Management, Muzaffarpur, Bihar, in Computer Science Department responsible for teaching MCA, BCA and MBA Courses from Sep, 2003 to Dec, 2007</p>
+                </div>
+
+                <div class="work-item">
+                    <p>• Worked as a counsellor for IGNOU program study center (code 0548) P5, Muzaffarpur, Bihar from Dec 2000 to Aug 2003. Responsible for teaching MCA and BCA Courses</p>
+                </div>
+
+                <div class="work-item">
+                    <p>• Worked as a Sr. Service Engineer in N.R.S. Engineers Pvt. Ltd. Lucknow, UP from Aug1995 to Nov, 2000, responsible for a team leader for installation, commissioning, and maintaining and assembling electronics devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Work Section - Light purple -->
+    <section class="sample-work">
+        <div class="container">
+            <h2>Sample Work</h2>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('.social-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                console.log('Social icon clicked');
+            });
+        });
+    </script>
+</body>
+</html>
