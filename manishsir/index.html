@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Manish Kumar - Resume</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span>☰</span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#research-work">Research Work</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <header class="header">
-            <img src="/twitter.png" alt="Dr. Manish Kumar Profile Image" class="profile-img">
-            <!-- <h1>Reach Out</h1> -->
-            <h1>Dr. Manish Kumar</h1>
-            <p>
-                <a href="mailto:manishkumar@gmail.com?subject=Contact%20Dr.%20Manish%20Kumar&body=Dear%20Dr.%20Kumar,%0D%0A%0D%0AI%20am%20reaching%20out%20regarding..." class="email-link">manishkumar@gmail.com</a> | 
-                <a href="mailto:manishkg1971@yahoo.com?subject=Contact%20Dr.%20Manish%20Kumar&body=Dear%20Dr.%20Kumar,%0D%0A%0D%0AI%20am%20reaching%20out%20regarding..." class="email-link">manishkg1971@yahoo.com</a>
-            </p>
-            <div class="social-icons">
-                <a href="#"><img src="/twitter.png" alt="" srcset="" class=""></a>
-                <a href="#"> <img src="/linkedin.png" alt="" srcset=""> </a>
-                <a href="#">💼</a>
+        <header class="header" id="home">
+            <div class="header-content">
+                <img src="/DATA/IMG/MANISH_PP_Photo_NEW.png" alt="Dr. Manish Kumar Profile Image" class="profile-img">
+                <h1>Dr. Manish Kumar</h1>
+                <p>
+                    <a href="mailto:manishkumar@gmail.com?subject=Contact%20Dr.%20Manish%20Kumar&body=Dear%20Dr.%20Kumar,%0D%0A%0D%0AI%20am%20reaching%20out%20regarding..."
+                        class="email-link">manishkumar@gmail.com</a> |
+                    <a href="mailto:manishkg1971@yahoo.com?subject=Contact%20Dr.%20Manish%20Kumar&body=Dear%20Dr.%20Kumar,%0D%0A%0D%0AI%20am%20reaching%20out%20regarding..."
+                        class="email-link">manishkg1971@yahoo.com</a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/manish-kumar-0a632b121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
             </div>
-            <!-- <a href="#top" class="back-to-top">Back to Top</a> -->
         </header>
 
-        <section class="section about-me">
+        <section id="about-me" class="section about-me">
             <h2>About Me</h2>
-            <p>Dr. Kumar is a distinguished academician and accomplished professional in the field of Information Technology with a strong educational background and extensive experience in academia and research. Over the years, he has held key academic positions including Associate Professor at Regional College of Engineering and Principal at Vidya Vihar Institute of Technology, Bihar. A dedicated researcher, Dr. Kumar has numerous contributions to his field through papers and publications in esteemed National and International journals. He has also served participants in various seminars and conferences, presenting insightful research papers that have made significant contributions to the technological domain. His expertise spans diverse areas of IT engineering and management. Dr. Kumar is also an active member of various professional associations and societies such as the International Association of Engineers, the Computer Society of India, and the Institution of Engineers India, which underscores his commitment to continuous learning and professional development. Through his leadership in education and research, Currently Dr. Kumar serves as the Director at L.N Mishra College of Business Management, Muzaffarpur, where he continues to lead with vision, fostering academic excellence and innovation in management and technology education.</p>
+            <p>Dr. Kumar is a distinguished academician and accomplished professional in the field of Information
+                Technology with a strong educational background and extensive experience in academia and research. Over
+                the years, he has held key academic positions including Associate Professor at Regional College of
+                Engineering and Principal at Vidya Vihar Institute of Technology, Bihar. A dedicated researcher, Dr.
+                Kumar has numerous contributions to his field through papers and publications in esteemed National and
+                International journals. He has also served participants in various seminars and conferences, presenting
+                insightful research papers that have made significant contributions to the technological domain. His
+                expertise spans diverse areas of IT engineering and management. Dr. Kumar is also an active member of
+                various professional associations and societies such as the International Association of Engineers, the
+                Computer Society of India, and the Institution of Engineers India, which underscores his commitment to
+                continuous learning and professional development. Through his leadership in education and research,
+                Currently Dr. Kumar serves as the Director at L.N Mishra College of Business Management, Muzaffarpur,
+                where he continues to lead with vision, fostering academic excellence and innovation in management and
+                technology education.</p>
         </section>
 
-        <section class="section education">
+        <section id="education" class="section education">
             <h2>Education</h2>
             <div class="education-item">
                 <h3>2012 - Doctor of Philosophy</h3>
-                <p>Ph.D. (Department of Information Technology Engineering) from Gulzar Group Brahmin Jharkhand University, Muzaffarpur, Bihar, in September 2012</p>
+                <p>Ph.D. (Department of Information Technology Engineering) from Gulzar Group Brahmin Jharkhand
+                    University, Muzaffarpur, Bihar, in September 2012</p>
             </div>
             <div class="education-item">
                 <h3>2005 - Master of Technology</h3>
@@ -45,7 +76,7 @@
             </div>
         </section>
 
-        <section class="section membership">
+        <section id="membership" class="section membership">
             <h2>Membership</h2>
             <ul>
                 <li>Life member of Computer Society of India (Member Id: 20421490490)</li>
@@ -54,25 +85,347 @@
             </ul>
         </section>
 
-        <section class="section work-experience">
+        <section id="work-experience" class="section work-experience">
             <h2>Work and Experience</h2>
             <div class="work-item">
                 <h3>Administration and Teaching</h3>
                 <ul>
-                    <li>Presently working as a Director, L N Mishra College of Business Management, Muzaffarpur, Bihar Since Sep 2023.</li>
-                    <li>Worked as a Principal at Vidya Vihar Institute of Technology, Mananga, Purnea, Bihar from Jun 2014 to July 2023</li>
-                    <li>Worked as Asst. Professor at Bhagalpur College of Engineering, Bhagalpur, Bihar, in Computer Science & Engineering Department on Contractual Basis from Jan, 2008 to Jun, 2014</li>
-                    <li>Worked as Asst. Professor at L N Mishra College of Business Management, Muzaffarpur, Bihar, in Computer Science Department responsible for teaching MCA, BCA and MBA Courses from Sep, 2003 to Dec, 2007</li>
-                    <li>Worked as a counsellor for IGNOU program study center (code 0548) P5, Muzaffarpur, Bihar from Dec 2000 to Aug 2003. Responsible for teaching MCA and BCA Courses</li>
-                    <li>Worked as a Sr. Service Engineer in N.R.S. Engineers Pvt. Ltd. Lucknow, UP from Aug 1995 to Nov, 2000, responsible for a team leader for installation, commissioning, and maintaining and assembling electronics devices.</li>
+                    <li>Presently working as a Director, L N Mishra College of Business Management, Muzaffarpur, Bihar
+                        Since Sep 2023.</li>
+                    <li>Worked as a Principal at Vidya Vihar Institute of Technology, Mananga, Purnea, Bihar from Jun
+                        2014 to July 2023</li>
+                    <li>Worked as Asst. Professor at Bhagalpur College of Engineering, Bhagalpur, Bihar, in Computer
+                        Science & Engineering Department on Contractual Basis from Jan, 2008 to Jun, 2014</li>
+                    <li>Worked as Asst. Professor at L N Mishra College of Business Management, Muzaffarpur, Bihar, in
+                        Computer Science Department responsible for teaching MCA, BCA and MBA Courses from Sep, 2003 to
+                        Dec, 2007</li>
+                    <li>Worked as a counsellor for IGNOU program study center (code 0548) P5, Muzaffarpur, Bihar from
+                        Dec 2000 to Aug 2003. Responsible for teaching MCA and BCA Courses</li>
+                    <li>Worked as a Sr. Service Engineer in N.R.S. Engineers Pvt. Ltd. Lucknow, UP from Aug 1995 to Nov,
+                        2000, responsible for a team leader for installation, commissioning, and maintaining and
+                        assembling electronics devices.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- <section class="section sample-work">
-            <h2>Sample Work</h2>
-            <p>[Placeholder for sample work content]</p>
-        </section> -->
+        <section id="research-work" class="section research-work">
+            <h2>Research Work</h2>
+            <h3>PAPERS</h3>
+            <ul class="research-list">
+                <li>
+                    <a href="/DATA/PAPERS/A Review on Big Data Analytics on Cyber Security.pdf" target="_blank"
+                        class="research-link">"A Review on Big Data Analytics on Cyber Security"</a>
+                   
+                </li>
+                <li>
+                    <a href="/DATA/PAPERS/Artificial Intelligence in Legal Practice Enhancing.pdf" target="_blank"
+                        class="research-link">"Artificial Intelligence in Legal Practice Enhancing" </a>
+                    
+                </li>
+                <li>
+                    <a href="/DATA/PAPERS/IJRITCC_OCT2023_ISSN2321-8169Volume11Issue9Ethical_ConsiderationsinAIGuidingPrinciplesforResponsibleDevelopment.pdf"
+                        target="_blank"
+                        class="research-link">"Ethical_ConsiderationsinAIGuidingPrinciplesforResponsibleDevelopment"
+                        </a>
+                   
+                </li>
+                <li>
+                    <a href="/DATA/PAPERS/IJRITCC_OCT2023_ISSN2321-8169Volume11Issue9Ethical_ConsiderationsinAIGuidingPrinciplesforResponsibleDevelopment.pdf"
+                        target="_blank"
+                        class="research-link">"Ethical_ConsiderationsinAIGuidingPrinciplesforResponsibleDevelopment"
+                        </a>
+                    
+                </li>
+
+                <li>
+                    <a href="/DATA/PAPERS/IoT Enabled Healthcare System for Remote & Near Patient Monitoring.pdf"
+                        target="_blank" class="research-link">"IoT Enabled Healthcare System for Remote & Near Patient
+                        Monitoring" </a>
+                   
+                </li>
+                <li>
+                    <a href="/DATA/PAPERS/Machine Learning Algorithms for Predicting Employee Performance through IoT Networks_ Implications for Leadership Development in Organizations _ Journal of Information Systems Engineering and Management.pdf"
+                        target="_blank" class="research-link">"Machine Learning Algorithms for Predicting Employee
+                        Performance through IoT Networks_ Implications for Leadership Development in Organizations _
+                        Journal of Information Systems Engineering and Management" </a>
+                
+                </li>
+            </ul>
+            <h3>PATENTS</h3>
+            <ul class="research-list">
+                <li>
+                    <a href="/DATA/PATENTS/09-09-2022-SYSTEM AND METHOD TO APPLY ROBOTICS TECHNOLOGY TO REPLACE A BATTERY PACK OF AN ELECTRIC VEHICLE (EV).pdf"
+                        target="_blank" class="research-link">"A System and Method for
+                        SYSTEM AND METHOD TO APPLY ROBOTICS TECHNOLOGY TO REPLACE A BATTERY PACK OF AN ELECTRIC VEHICLE
+                        (EV)</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/202211000558.pdf" target="_blank" class="research-link">"METHOD FOR ROBOTICS
+                        FOR MEDICAL PROFESSIONALS DURING PANDEMIC"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/202211022455.pdf" target="_blank" class="research-link">"METHOD AND SYSTEM TO
+                        COMBAT A SECURITY BREACH IN A HOUSE USING A MACHINE LEARNING APPROACH"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/2023_01_ROUTER_372998-001.pdf" target="_blank"
+                        class="research-link">"Router"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/2024_01BIOMETRIC_MAIL_SECURITY_DEVICE.pdf" target="_blank"
+                        class="research-link">"BIOMETRIC_MAIL_SECURITY_DEVICE"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/417265-001.pdf" target="_blank" class="research-link">"PREDICTIVE MARKETING
+                        MANAGEMENT
+                        ASSISTANT DEVICE"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/425144-001_BUSINESS_OPERATIONS_MONITORING_DEVICE.pdf" target="_blank"
+                        class="research-link">"PBUSINESS_OPERATIONS_MONITORING_DEVICE"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/447246-001_ CRISIS SIMULATION AND TRAINING.pdf" target="_blank"
+                        class="research-link">"CRISIS SIMULATION AND TRAINING"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/Electronic_Stethoscope_Patent_379392-001 (1).pdf" target="_blank"
+                        class="research-link">"Electronic_Stethoscope"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/PATENTS/Patent_Virtual_Reality_HendSet_Feb 2024.pdf" target="_blank"
+                        class="research-link">"Patent_Virtual_Reality_HendSet"</a>
+
+                </li>
+            </ul>
+            <h3>BOOKS</h3>
+            <ul class="research-list">
+                <li>
+                    <a href="/DATA/BOOKS/basic concept of Software Testing.pdf" target="_blank"
+                        class="research-link">"Basic concept of Software Testing"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Basic_of_AI_Markup_Language.pdf" target="_blank"
+                        class="research-link">"Basic_of_AI_Markup_Language"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/BHARAT47_2024.pdf" target="_blank"
+                        class="research-link">"BHARAT47_2024"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Book_Algorithm Optimization.pdf" target="_blank"
+                        class="research-link">"Book_Algorithm Optimization"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Book_Data Analytics.pdf" target="_blank"
+                        class="research-link">"Book_Data Analytics"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/BOOKISBN978_93_5673_704_4_Evincepub Publishing_CYBER_SECURITY_2024_COVERPAGE.pdf" target="_blank"
+                        class="research-link">"Evincepub Publishing_CYBER_SECURITY_2024"</a>   
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Business Analytics .pdf" target="_blank"
+                        class="research-link">"Business Analytics"</a>
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Driving Modern Business Intelligence Architecture for Operational Efficiency.pdf" target="_blank"
+                        class="research-link">"Driving Modern Business Intelligence Architecture for Operational Efficiency"</a>
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/E-Commerce.pdf" target="_blank"
+                        class="research-link">"E-Commerce"</a>
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/ENVI_SUST_DEVELOPMENT.pdf" target="_blank"
+                        class="research-link">"ENVI_SUST_DEVELOPMENT"</a>
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Internet of Things.pdf" target="_blank"
+                        class="research-link">"Internet of Things"</a>
+                </li>
+                <li>
+                    <a href="/DATA/BOOKS/Python Programming .pdf" target="_blank"
+                        class="research-link">"Python Programming"</a>
+                </li>
+
+               
+            </ul>
+        </section>
+
+        <section id="certification" class="section certification">
+            <h2>Certification</h2>
+            <ul class="research-list">
+                <li>
+                    <a href="/DATA/EXTRA/COURSERA_CERTIFICATE_AI.pdf" target="_blank"
+                        class="research-link">"Artificial Intelligence"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/EXTRA/COURSERA_CERTIFICATE_DATA_SCIENCE.pdf" target="_blank"
+                        class="research-link">"DATA SCIENCE"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/EXTRA/COURSERA_CERTIFICATE_PYTHON_DATA_STRUCTURENYNPASYUN438.pdf" target="_blank"
+                        class="research-link">"PYTHON DATA STRUCTURENYNPASYUN"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/EXTRA/COURSERA_CERTIFICATE_PYTHON_FOR_EVERYONE.pdf" target="_blank"
+                        class="research-link">"PYTHON_FOR_EVERYONE"</a>
+
+                </li>
+                <li>
+                    <a href="/DATA/EXTRA/Evaluator_Certificate_MoE_Innovation Cell.pdf" target="_blank"
+                        class="research-link">"MoE_Innovation Cell"</a>
+
+                </li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section gallery">
+        
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/_86A5211.JPG" alt="Academic Conference" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Academic Conference 2023</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/_86A5257.JPG" alt="Research Presentation" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Research Presentation</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/_86A5263.JPG" alt="College Event" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">College Event</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/_86A5360.JPG" alt="Academic Award Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Award Ceremony</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/_86A5362.JPG" alt="Workshop Session" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Workshop Session</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9594.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9606.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9615.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9667.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9629.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9792.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/DSC_9890.JPG" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/IMG-20241211-WA0006.jpg" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/IMG-20241226-WA0015.jpg" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/MANISH-FULL-LENGTH-WITH-BAKGRND1.png" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/MANISH-FULL-LENGTH-WITH-BAKGRND2.png" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/MANISH-FULL-LENGTH-WITH-BAKGRND3.png" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/DATA/IMG/MANISH-FULL-LENGTH-WITH-BAKGRND4.png" alt="Faculty Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Faculty Meeting</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Modal for full-size images -->
+            <div id="gallery-modal" class="gallery-modal">
+                <span class="gallery-close">&times;</span>
+                <img class="gallery-modal-content" id="modal-img">
+                <div class="gallery-caption" id="modal-caption"></div>
+                <div class="gallery-nav">
+                    <button class="gallery-prev">&#10094;</button>
+                    <button class="gallery-next">&#10095;</button>
+                </div>
+            </div>
+        </section>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
